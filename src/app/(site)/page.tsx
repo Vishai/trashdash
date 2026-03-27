@@ -24,7 +24,7 @@ export default function HomePage() {
                 alt="TrashDash Mascot"
                 width={660}
                 height={660}
-                className="w-[65vw] sm:w-[50vw] md:w-[40%] lg:w-[27rem] h-auto drop-shadow-2xl"
+                className="w-[80vw] sm:w-[62vw] md:w-[50%] lg:w-[34rem] h-auto drop-shadow-2xl"
                 priority
               />
             </div>
