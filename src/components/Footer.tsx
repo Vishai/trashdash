@@ -31,7 +31,7 @@ export default function Footer() {
               <li><Link href="/how-it-works" className="hover:text-brand-green transition-colors">How It Works</Link></li>
               <li><Link href="/about" className="hover:text-brand-green transition-colors">About Us</Link></li>
               <li><Link href="/service-area" className="hover:text-brand-green transition-colors">Service Area</Link></li>
-              <li><Link href="/contact" className="hover:text-brand-green transition-colors">Contact</Link></li>
+              <li><Link href="/quote" className="hover:text-brand-green transition-colors">Get a Quote</Link></li>
             </ul>
           </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <Link
-                href="/contact"
+                href="/quote"
                 className="bg-brand-green hover:bg-brand-green-dark text-white font-bold px-6 py-3 rounded-lg transition-colors inline-block text-sm uppercase"
               >
                 Get a Free Quote

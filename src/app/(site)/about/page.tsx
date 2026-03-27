@@ -82,7 +82,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-extrabold">Let Us Help You Clear the Clutter</h2>
           <p className="mt-3 text-lg text-green-100">Licensed &amp; insured &bull; Free estimates &bull; Locally owned</p>
           <div className="mt-6">
-            <Link href="/contact" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors inline-block">
+            <Link href="/quote" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors inline-block">
               Get a Free Quote
             </Link>
           </div>

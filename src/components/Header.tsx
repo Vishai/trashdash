@@ -10,7 +10,6 @@ const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/about", label: "About" },
   { href: "/service-area", label: "Service Area" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -19,20 +18,20 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 md:h-18">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/logo-full.png"
               alt="TrashDash Junk Removal"
-              width={220}
-              height={70}
-              className="h-14 w-auto"
+              width={340}
+              height={110}
+              className="h-16 md:h-20 w-auto"
               priority
             />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -43,7 +42,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/quote"
               className="bg-brand-green hover:bg-brand-green-dark text-white font-bold px-5 py-2.5 rounded-lg transition-colors text-sm uppercase tracking-wide"
             >
               Get a Free Quote
@@ -52,7 +51,7 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -69,7 +68,7 @@ export default function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t bg-white">
+        <div className="lg:hidden border-t bg-white">
           <nav className="flex flex-col px-4 py-4 gap-3">
             {navLinks.map((link) => (
               <Link
@@ -82,7 +81,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/quote"
               className="bg-brand-green hover:bg-brand-green-dark text-white font-bold px-5 py-3 rounded-lg transition-colors text-center uppercase tracking-wide mt-2"
               onClick={() => setMobileOpen(false)}
             >

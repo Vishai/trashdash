@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 
-export default function ContactPage() {
+export default function QuotePage() {
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -15,7 +15,7 @@ export default function ContactPage() {
     <>
       <section className="bg-brand-charcoal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold">Get a Free Quote</h1>
           <p className="mt-4 text-xl text-gray-300">
             Get a free, no-obligation estimate today.
           </p>

@@ -86,7 +86,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-extrabold">Not Sure What You Need?</h2>
           <p className="mt-3 text-lg text-green-100">Give us a call or request a free quote. We&apos;ll figure it out together.</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors">
+            <Link href="/quote" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors">
               Get a Free Quote
             </Link>
             <a href="tel:8015052929" className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-brand-green transition-colors">

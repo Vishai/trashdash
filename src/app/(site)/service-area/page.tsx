@@ -87,7 +87,7 @@ export default function ServiceAreaPage() {
           <h2 className="text-3xl font-extrabold">Need Junk Removal in Your Area?</h2>
           <p className="mt-3 text-lg text-green-100">Call or text us for a free estimate.</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors">
+            <Link href="/quote" className="bg-white text-brand-green font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors">
               Request a Quote
             </Link>
             <a href="tel:8015052929" className="border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-brand-green transition-colors">
