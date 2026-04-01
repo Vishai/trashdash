@@ -33,7 +33,7 @@ function ServiceGrid({ items }: { items: { icon: string; title: string; desc: st
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {items.map((s) => (
-        <div key={s.title} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <div key={s.title} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
           <span className="text-4xl">{s.icon}</span>
           <h3 className="text-xl font-bold mt-3 text-brand-charcoal">{s.title}</h3>
           <p className="text-gray-500 mt-2">{s.desc}</p>
@@ -51,7 +51,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold">Our Services</h1>
           <p className="mt-4 text-xl text-gray-300">
-            No job too big or small &mdash; we do it all!
+            No job too big or small - we do it all!
           </p>
         </div>
       </section>

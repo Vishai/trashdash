@@ -30,14 +30,15 @@ export default function HomePage() {
             </div>
             <div className="flex-1 text-center md:text-left md:order-1">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-                Junk Removal{" "}
+                Junk Removal
+                <br />
                 <span className="text-brand-green">Made Easy</span>
               </h1>
               <p className="text-xl md:text-2xl mt-4 text-gray-300 font-medium">
                 Fast &bull; Affordable &bull; Reliable
               </p>
               <p className="mt-6 text-gray-300 text-lg max-w-lg">
-                Same day &amp; next day service available. No job too big or small &mdash; we do it all!
+                Same day &amp; next day service available. No job too big or small - we do it all!
                 Serving Salt Lake City and surrounding areas.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
@@ -74,9 +75,9 @@ export default function HomePage() {
                 key={s.title}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
               >
-                <span className="text-4xl">{s.icon}</span>
-                <h3 className="text-xl font-bold mt-3 text-brand-charcoal">{s.title}</h3>
-                <p className="text-gray-500 mt-2">{s.desc}</p>
+                <span className="text-4xl block text-center">{s.icon}</span>
+                <h3 className="text-xl font-bold mt-3 text-brand-charcoal text-center">{s.title}</h3>
+                <p className="text-gray-500 mt-2 text-center">{s.desc}</p>
               </div>
             ))}
           </div>

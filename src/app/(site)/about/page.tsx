@@ -44,12 +44,12 @@ export default function AboutPage() {
               <p className="mt-4 text-gray-600 text-lg leading-relaxed">
                 TrashDash Junk Removal was founded with a simple mission: help people reclaim
                 their space quickly and stress-free. We know that dealing with junk can be
-                overwhelming &mdash; whether it&apos;s a garage full of clutter, old furniture, or
+                overwhelming - whether it&apos;s a garage full of clutter, old furniture, or
                 construction debris from a renovation project.
               </p>
               <p className="mt-4 text-gray-600 text-lg leading-relaxed">
                 That&apos;s why we built TrashDash around speed, professionalism, and responsible
-                disposal. We&apos;re not just hauling junk &mdash; we&apos;re helping our neighbors
+                disposal. We&apos;re not just hauling junk - we&apos;re helping our neighbors
                 in Salt Lake City and the surrounding areas live in cleaner, more comfortable spaces.
               </p>
               <p className="mt-4 text-gray-600 text-lg leading-relaxed">

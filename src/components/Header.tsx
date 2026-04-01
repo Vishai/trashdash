@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/about", label: "About" },
   { href: "/service-area", label: "Service Area" },
+  { href: "/services-preview", label: "Layout Preview" },
 ];
 
 export default function Header() {
@@ -18,14 +19,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-18">
+        <div className="flex justify-between items-center h-18 md:h-22">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logo-full.png"
+              src="/images/logo-no-number.png"
               alt="TrashDash Junk Removal"
               width={340}
               height={110}
-              className="h-16 md:h-20 w-auto"
+              className="h-[4.5rem] md:h-[5.5rem] w-auto"
               priority
             />
           </Link>

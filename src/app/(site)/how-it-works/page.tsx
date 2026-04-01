@@ -31,7 +31,7 @@ const steps = [
   {
     num: "3",
     title: "We Show Up & Load",
-    desc: "Our professional, uniformed team arrives on time. We do all the heavy lifting \u2014 you just point at what needs to go.",
+    desc: "Our professional, uniformed team arrives on time. We do all the heavy lifting - you just point at what needs to go.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -94,11 +94,11 @@ export default function HowItWorksPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                <tr><td className="px-6 py-4">Minimum (single items)</td><td className="px-6 py-4 font-semibold">$100 &ndash; $150</td></tr>
-                <tr className="bg-gray-50"><td className="px-6 py-4">Small Load (1/8 truck)</td><td className="px-6 py-4 font-semibold">$150 &ndash; $250</td></tr>
-                <tr><td className="px-6 py-4">Medium Load (1/4 truck)</td><td className="px-6 py-4 font-semibold">$250 &ndash; $400</td></tr>
-                <tr className="bg-gray-50"><td className="px-6 py-4">Large Load (1/2 truck)</td><td className="px-6 py-4 font-semibold">$400 &ndash; $700</td></tr>
-                <tr><td className="px-6 py-4">Full Truck Load</td><td className="px-6 py-4 font-semibold">$700 &ndash; $1,000+</td></tr>
+                <tr><td className="px-6 py-4">Minimum (single items)</td><td className="px-6 py-4 font-semibold"><span className="hidden sm:inline">$99 - $149</span><span className="sm:hidden">$99+</span></td></tr>
+                <tr className="bg-gray-50"><td className="px-6 py-4">Small Load (1/8 truck)</td><td className="px-6 py-4 font-semibold"><span className="hidden sm:inline">$149 - $249</span><span className="sm:hidden">$149+</span></td></tr>
+                <tr><td className="px-6 py-4">Medium Load (1/4 truck)</td><td className="px-6 py-4 font-semibold"><span className="hidden sm:inline">$249 - $399</span><span className="sm:hidden">$249+</span></td></tr>
+                <tr className="bg-gray-50"><td className="px-6 py-4">Large Load (1/2 truck)</td><td className="px-6 py-4 font-semibold"><span className="hidden sm:inline">$399 - $699</span><span className="sm:hidden">$399+</span></td></tr>
+                <tr><td className="px-6 py-4">Full Truck Load</td><td className="px-6 py-4 font-semibold">$699+</td></tr>
               </tbody>
             </table>
           </div>

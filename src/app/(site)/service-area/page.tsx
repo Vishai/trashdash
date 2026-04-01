@@ -48,7 +48,7 @@ export default function ServiceAreaPage() {
             <h2 className="text-3xl font-extrabold text-brand-charcoal">Areas We Serve</h2>
             <p className="mt-4 text-gray-500 text-lg">
               We provide junk removal services throughout Salt Lake City and the surrounding
-              communities. Don&apos;t see your area listed? Give us a call &mdash; we may still be
+              communities. Don&apos;t see your area listed? Give us a call - we may still be
               able to help!
             </p>
           </div>
