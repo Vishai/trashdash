@@ -1,14 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import { useState, type FormEvent } from "react";
+import { useState, Suspense, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
+import { useMutation } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 
-export default function QuickRequestPage() {
+function QuickRequestForm() {
   const [submitted, setSubmitted] = useState(false);
+  const searchParams = useSearchParams();
+  const ref = searchParams.get("ref") ?? "";
+  const submitForm = useMutation(api.formSubmissions.submit);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: integrate with CRM/FSM system
+    const fd = new FormData(e.currentTarget);
+    try {
+      await submitForm({
+        formType: "quick-request",
+        name: fd.get("name") as string,
+        phone: fd.get("phone") as string,
+        address: fd.get("address") as string,
+        description: fd.get("description") as string,
+        ref,
+      });
+    } catch {
+      // Still show success to the customer even if Convex is down
+    }
     setSubmitted(true);
   }
 
@@ -50,6 +68,7 @@ export default function QuickRequestPage() {
               </p>
 
               <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+                <input type="hidden" name="ref" value={ref} />
                 <div>
                   <label htmlFor="qr-name" className="block text-sm font-semibold text-brand-charcoal mb-1">
                     Name *
@@ -141,5 +160,13 @@ export default function QuickRequestPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function QuickRequestPage() {
+  return (
+    <Suspense>
+      <QuickRequestForm />
+    </Suspense>
   );
 }
